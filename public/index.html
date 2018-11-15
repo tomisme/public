@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> tomisme </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <style>
+       body { font-family: 'Raleway', sans-serif; }
+          p { font-size: 2rem; }
+         ul { font-size: 1.5rem;
+              margin-top: 0.4rem; }
+         li { padding-top: 0.6rem }
+        div { position: relative; }
+      .long { display: flex;
+              flex-direction: row;
+              justify-content: center;
+              flex-wrap: wrap; }
+     .short { display: flex;
+              flex-direction: column;
+              margin: 5px; }
+      .last { margin-bottom: 0px; }
+     .logos { text-align: center; }
+   .logos a { text-decoration: none; }
+ .logos img { padding: 0.8rem; }
+       .jaw { position: absolute;
+              top: 0;
+              left: 0;
+              animation-duration: 1s;
+              animation-name: bounce;
+              animation-iteration-count: infinite;
+              animation-direction: alternate; }
+      @keyframes bounce { from { margin-top: 0%; }
+                          to   { margin-top: 5%; }}
+    </style>
+  </head>
+  <body>
+   <div class="long">
+    <div class="short">
+     <p> Hey, hello. </p>
+     <p> My name is Tom Hutchinson. </p>
+     <p class="last"> I'm currently looking for work 🖥</p>
+     <ul>
+      <li> Short term contracts using Clojure or Ethereum </li>
+      <li> Longer term contracts preferably using both! </li>
+     </ul>
+     <p> Why not <a href="mailto:mail@tomisme.com"> email me</a>?</p>
+
+     <p class="last"> Other possible discussion topics: </p>
+     <ul>
+       <li> Making things for the Web </li>
+       <li> Teaching </li>
+       <li> Boardgames </li>
+     </ul>
+     <div class="logos">
+       <a href="https://github.com/tomisme" target="_blank">
+         <img src="images/github.png">
+       </a>
+       <a href="https://twitter.com/roeinyourboat" target="_blank">
+         <img src="images/twitter.png">
+       </a>
+     </div>
+    </div>
+    <div class="short">
+     <div>
+       <img src="images/mask_top.png">
+       <img class="jaw" src="images/mask_bottom.png">
+     </div>
+    </div>
+   </div>
+  </body>
+</html>
